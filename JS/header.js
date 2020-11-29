@@ -83,7 +83,7 @@ $(document).ready(function() {
 			url: "mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			alert("Thank you!");
+			alert("Dziękujemy za Aplikacje!");
 			setTimeout(function() {
 				// Done Functions
 				th.trigger("reset");
