@@ -1,0 +1,107 @@
+.cta-form-and-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* info block */
+
+
+.info-block{
+    width: 500px;
+}
+.info-block-paragraph{
+    display: block;
+    flex-wrap: wrap;
+}
+.info-block-praragraph__h3{
+    font-size: 3.6vmin;
+    color: white; 
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.info-block-paragraph__text{
+    font-size: 3vmin;
+    color: white;
+    font-weight: 400;
+}
+.info-block-paragraph{
+    margin-bottom: 15px;
+}
+
+
+/* info block end */
+
+
+/* regulamin */
+
+
+.aplikation-form{
+    width: min-content;
+    padding: 20px;
+}
+.aplikation-form__field{
+    display: block;
+    flex-wrap: wrap;
+}
+.aplikation-form__input{
+    background: transparent url(../SVG/circle_icon.svg) no-repeat left 1px;
+    background-size: 20px;
+    border: 0;
+    border-bottom: solid 2px white;
+    margin-bottom: 60px;
+    width: 300px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+}
+.aplikation-form__input::placeholder{
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+}
+#file-input{
+    color: white;
+}
+input[type="file"]::-webkit-file-upload-button{
+    color: white;
+    background: transparent;
+    border:solid 1px;
+    border-color:white;
+    border-radius:20px;
+}
+input[type="file"]::-webkit-file-upload-button:hover, input[type="file"]::-webkit-file-upload-button:focus{
+    background-color: #0B486B;
+    transition: .2s ease-in-out;
+}
+input[type="file"]::-webkit-file-upload-button:active{
+    background: #083550;
+}
+.aplikation-form__btn{
+    padding: 15px 40px;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 500;
+    border:solid 2px white;
+    background: transparent;
+    color: white;
+    border-radius: 25px;
+}
+.aplikation-form__btn:hover, .aplikation-form__btn:focus {
+    background-color: #0B486B;
+    transition: .2s ease-in-out;
+}
+.aplikation-form__btn:active{
+    background: #083550;
+}
+.aplikation-form-field__wrap{
+    text-align: center;
+}
+
+
+/* regulamin end */
+
+

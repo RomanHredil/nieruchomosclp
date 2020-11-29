@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LP Prototype</title>
+        <link rel="stylesheet" href=".//CSS/style.css">
+        <script src="./JS/Blok Script.js Script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__wrapper">
+                <a href="/" class="header__logo_link">
+                    <img src="./SVG/Logo/sygnet_ziel_jasne.svg" alt="LP Prototype" class="header__logo-item">
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__blocks">
+                        <li class="header__item">
+                            <a href="#aplicatonForm" class="header__link js-scroll">Aplikuj do Nas</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#additionalInformation" class="header__link js-scroll">Kim Jesteśmy</a>
+                        </li>
+                    </ul>
+                    <div class="header__nav-close">
+                        <span class="header__nav-close-line"></span>
+                        <span class="header__nav-close-line"></span>
+                    </div>
+                </nav>
+                <div class="header__burger burger">
+                    <span class="burger__line burger__line_first"></span>
+                    <span class="burger__line burger__line_second"></span>
+                    <span class="burger__line burger__line_third"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="intro">
+            <div class="wrapper">   
+                <div class="content">
+                    <h1 class="intro__tittle">Columbus Elite #dobrzetubyć</h1>
+                    <h3 class="intro__subtittle">Przeprowadź się do organizacji z większymi możliwościami.</h3>
+                    <p class="intro-information__text">
+                        Kiedy pozostali zastanawiają się jak ratować firmę, każdego dnia do zespołu Columbus Elite dołącza nowy Doradca Energetyczny. Nie zwalniamy tempa, rośniemy w siłę.
+
+                        Stale poszukujemy Partnerów do pionu sprzedaży: Sprzedawców, Doradców, Agentów oraz Dyrektorów.
+
+                        Zmiana pracy to poważne wyzwanie. Jednak bez zmian, nie ma rozwoju. Nie zatrzymuj się w miejscu bez perspektyw. Daj sobie szansę na lepsze jutro.
+
+                    </p>
+                </div>         
+            </div>
+        </section>
+        <section class="benefits">
+            <div class="benefits__wrap">
+                <h2 class="benefits__tittle">
+                    W Columbus Elite: 
+                </h2>
+                <div class="benefits__cards">
+                    <div class="benefits__card">
+                        <div class="benefits-card__img">
+                            <img src="./SVG/Columbus Icons/money_icon.svg" class="benefits-card-img-icon" alt="zaczniesz lepiej zarabiać">
+                        </div>
+                        <p class="benefits-desc">Zaczniesz lepiej<br>zarabiać</p>
+                    </div>
+                    <div class="benefits__card">
+                        <div class="benefits-card__img">
+                            <img src="./SVG/Columbus Icons/percent_icon.svg" class="benefits-card-img-icon" alt="będziesz mieć wysoką prowizję">
+                        </div>
+                        <p class="benefits-desc">Będziesz mieć wysoką prowizję</p>
+                    </div>
+                    <div class="benefits__card">
+                        <div class="benefits-card__img">
+                            <img src="./SVG/Columbus Icons/lead_icon.svg" class="benefits-card-img-icon" alt="dostarczymy ci wiarygodne lead’y">
+                        </div>
+                        <p class="benefits-desc">Dostarczymy Ci<br>wiarygodne lead’y</p>    
+                    </div>
+                    <div class="benefits__card">
+                        <div class="benefits-card__img">
+                            <img src="./SVG/Columbus Icons/study_icon.svg" class="benefits-card-img-icon" alt="wszystkiego cię nauczymy">
+                        </div>
+                        <p class="benefits-desc">Wszystkiego Cię<br>nauczymy</p>
+                    </div>
+                    <div class="benefits__card">
+                        <div class="benefits-card__img">
+                            <img src="./SVG/Columbus Icons/mentor_icon.svg" class="benefits-card-img-icon" alt="masz stałe wsparcie merytoryczne z przełożonym">
+                        </div>
+                        <p class="benefits-desc">Masz stałe wsparcie merytoryczne z Przełożonym</p>
+                    </div>
+                    <div class="benefits__card">
+                        <div class="benefits-card__img">
+                            <img src="./SVG/Columbus Icons/stability_icon.svg" class="benefits-card-img-icon" alt="oferujemy stabilną pracę">
+                        </div>
+                        <p class="benefits-desc">Oferujemy stabilną<br>pracę</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <form class="aplikation-form" name="ColumbusEliteCV" action="mail.php" method="POST" id="aplicatonForm">
+            <fieldset class="aplikation-form__wrap">
+                <div class="aplikation-form-tittle__wrap">
+                <h2 class="aplikation-form__tittle">Do tej pory kontakt z panelami fotowoltaicznymi lub pompami ciepła miałeś wyłącznie podczas sprzedaży domów jednorodzinnych. Myślałeś kiedyś o tym, że mógłbyś je sprzedawać? Wszystko jest możliwe!<br> Aplikuj do nas. </h2>
+                </div>
+                <div class="aplikation-form__info">
+                    <div class="aplikation-form-field__wrap">
+                        <span class="aplikation-form__field">
+                            <input type="text" name="your-name" class="aplikation-form__input" aria-required="true" aria-invalid="false" placeholder="Imię">
+                        </span>
+                        </div>
+                    <div class="aplikation-form-field__wrap">
+                        <span class="aplikation-form__field">
+                            <input  type="text" name="your-name" class="aplikation-form__input" aria-required="true" aria-invalid="false" placeholder="Nazwisko">
+                        </span>
+                        </div>
+                    <div class="aplikation-form-field__wrap">
+                        <span class="aplikation-form__field">
+                            <input type="email" name="your-email" class="aplikation-form__input" aria-required="true" aria-invalid="false" placeholder="Adres e-mail">
+                        </span>
+                        </div>
+                    <div class="aplikation-form-field__wrap">
+                        <span class="aplikation-form__field">
+                            <input type="tel" name="your-tel" class="aplikation-form__input" aria-required="true" aria-invalid="false" placeholder="Numer telefonu">
+                        </span>
+                    </div>
+                    <div class="aplikation-form-field__wrap">
+                        <span class="aplikation-form__field">
+                            <input type="file" name="file-915" size="70" class="aplikation-form__input" id="file-input" accept=".txt,.pdf,.doc,.docx,.jpeg" aria-required="true" aria-invalid="true">
+                        </span>
+                    </div>
+                    <div class="aplikation-form-field__wrap">
+                            <label class="aplikation-form-field-checkbox__label">
+                                <input type="checkbox" id="privacy_policy__acceptance" name="acceptance" class="aplikation-form-input__checkbox" aria-required="true" aria-invalid="true"> 
+                                <span class="aplikation-form-field-checkbox__custom"></span>
+                                <span class="aplikation-form-field-checkbox__text">Wyrażam zgodę na przetwarzanie przez COLUMBUS ELITE spółka akcyjna moich danych osobowych, w celu prowadzenia procesów rekrutacyjnych, w szczególności zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. (RODO) przez okres najbliższych 2 lat. Brak wyrażenia ww. zgody spowoduje, że dane zostaną usunięte po zakończeniu trwającego procesu rekrutacyjnego.</span>                                
+                            </label>
+                        </span>
+                    </div>
+                    <div class="aplikation-form-field__wrap">
+                        <span class="aplikation-form-field-acceptance__btn">
+                            <button class="aplikation-form__btn" id="send-aplikation-confirmation" aria-required="true" aria-invalid="true">APLIKUJ</button>
+                        </span>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <section class="info-hashtags" id="additionalInformation">
+            <div class="wrapper">
+                <h2 class="info-hashtags__h2">
+                    Dla zespołu Columbus Elite najważniejsze są dwie idee. Są to #thinkpower i #thinkpeople, które wzajemnie się uzupełniają i pomagają realizować przyjęte cele. Dla ludzi tworzących organizację są one bardzo ważne, ponieważ nadają rytm codziennej pracy.
+                </h2>
+                <div class="info-hashtags__wrap">
+                    <div class="first-hashtag-info">
+                        <div class="first-hashtag__img">
+                            <img src="/JPEG/Group 2.jpg" alt="#thinkpower">
+                        </div>
+                        <p class="hashtag-text-first">
+                            #thinkpower - organizacja jest siłą. Każdego dnia dążymy do tego, aby aktywnie piąć się po szczeblach kariery w branży OZE. Firma jest prowadzona świadomie i elastycznie, co wpływa na łatwość odnajdywania się w każdej nowej sytuacji. Bez końca powiększamy zespoły od marketingu, przez HR, po sprzedawców, które wspólnie realizują cel jakim jest wzrost udziału energii czerpanej ze słońca w Polsce.
+                        </p>
+                    </div>
+                    <div class="second-hashtag-info">
+                        <p class="hashtag-text-second">
+                            #thinkpeople - ludzie są siłą. W pracy dajemy ludziom miejsce na swobodę i kreatywność. Wierzymy, że dzięki temu poczucie satysfakcji z wykonania zadania, będzie jeszcze większe. Proponujemy mnóstwo narzędzi, które pomagają w rozwoju każdego pracownika, np. szkolenia, spotkania z ciekawymi ludźmi czy merytoryczne wsparcie przełożonych. Jest to bardzo ważne, by zespół ciągle podnosił swoje kompetencje.
+                        </p>
+                        <div class="second-hashtag__img">
+                            <img src="/JPEG/Group 1.jpg" alt="#thinkpeople">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <div class="video">
+            <div class="video__wrapper">
+                <div class="video__item">
+                <iframe class="video-celite" src="https://www.youtube.com/embed/t6toPQOpG5M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__items">
+                <div class="footer__logo">
+                    <img src="./SVG/Logo/sygnet_ziel_jasne.svg" alt="LP Prototype" class="footer-logo__pic">
+                </div>
+                <nav class="footer__nav">
+                    <ul class="footer-nav__info">
+                        <li class="footer-nav-info-column">
+                            <a href="#!" class="footer-nav-info-column__link">Adres:<br>Kraków, ul. Jasnogórska 9, 31-358</a>
+                        </li>
+                        <li class="footer-nav-info-column">
+                            <a href="#!" class="footer-nav-info-column__link">E-mail:<br>biuro@columbuselite.pl</a>
+                        </li>
+                        <div class="footer-nav-info-smlinks">
+                            <li class="footer-nav-info-column footer-nav-info-column__smlinks">
+                                <a href="http://columbuselite.pl" class="footer-nav-info-column-smlinks__links" target="blank">
+                                    <img src="./SVG/Social Media Icons/wesite_icon.svg" alt="webpage" class="footer-nav-info-column-smlinks__icons">
+                                </a>
+                            </li>
+                            <li class="footer-nav-info-column footer-nav-info-column__smlinks">
+                                <a href="https://www.facebook.com/columbuselite/" class="footer-nav-info-column-smlinks__icons" target="blank">
+                                    <img src="./SVG/Social Media Icons/facebook_icon.svg" alt="facebook" class="footer-nav-info-column-smlinks__icons">
+                                </a>
+                            </li>
+                            <li class="footer-nav-info-column footer-nav-info-column__smlinks">
+                                <a href="https://www.instagram.com/wearecolumbuselite/" class="footer-nav-info-column-smlinks__icons" target="blank">
+                                    <img src="./SVG/Social Media Icons/instagram_icon.svg" alt="instagram" class="footer-nav-info-column-smlinks__icons">
+                                </a>
+                            </li>
+                            <li class="footer-nav-info-column footer-nav-info-column__smlinks">
+                                <a href="https://www.youtube.com/channel/UClJgiUV46c4zUke-hz8xjow" class="footer-nav-info-column-smlinks__icons" target="blank">
+                                    <img src="./SVG/Social Media Icons/youtube_icon.svg" alt="youtube" class="footer-nav-info-column-smlinks__icons">
+                                </a>
+                            </li>
+                            <li class="footer-nav-info-column footer-nav-info-column__smlinks">
+                                <a href="https://www.linkedin.com/company/columbus-elite-sa/" class="footer-nav-info-column-smlinks__icons" target="blank">
+                                    <img src="./SVG/Social Media Icons/linkedin_icon.svg" alt="linkedin" class="footer-nav-info-column-smlinks__icons">
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <script src="/JS/header.js"></script>
+</body>
+</html>
+
