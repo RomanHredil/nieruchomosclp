@@ -1007,6 +1007,9 @@ position: relative;
         line-height: 32px;
         padding: 0 15px;
     }
+    .benefits{
+        margin-bottom: 0;
+    }
     .first-hashtag-info{
         padding-left: 15px;
         padding-right: 15px;
