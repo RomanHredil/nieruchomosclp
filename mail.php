@@ -1,64 +1,52 @@
 <?php
 
-$to = $_POST['roman.hredil@columbuselite.pl'];
-$fromEmail = $_POST['your-email'];
-$fromName = $_POST['your-name'];
-$subject = $_POST['ColumbusEliteCV'];
+$method = $_SERVER['REQUEST_METHOD'];
 
-/* GET File Variables */
-$tmpName = $_FILES['attachment']['tmp_name'];
-$fileType = $_FILES['attachment']['type'];
-$fileName = $_FILES['attachment']['name'];
+//Script Foreach
+$c = true;
+if ( $method === 'POST' ) {
 
-/* Start of headers */
-$headers = "From: ColumbusEliteCV";
+	$project_name = trim($_POST["project_name"]);
+	$admin_email  = trim($_POST["admin_email"]);
+	$form_subject = trim($_POST["form_subject"]);
 
-if (file($tmpName)) {
-  /* Reading file ('rb' = read binary)  */
-  $file = fopen($tmpName,'rb');
-  $data = fread($file,filesize($tmpName));
-  fclose($file);
+	foreach ( $_POST as $key => $value ) {
+		if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
+			$message .= "
+			" . ( ($c = !$c) ? '<tr>':'<tr style="background-color: #f8f8f8;">' ) . "
+				<td style='padding: 10px; border: #e9e9e9 1px solid;'><b>$key</b></td>
+				<td style='padding: 10px; border: #e9e9e9 1px solid;'>$value</td>
+			</tr>
+			";
+		}
+	}
+} else if ( $method === 'GET' ) {
 
-  /* a boundary string */
-  $randomVal = md5(time());
-  $mimeBoundary = "==Multipart_Boundary_x{$randomVal}x";
+	$project_name = trim($_GET["project_name"]);
+	$admin_email  = trim($_GET["admin_email"]);
+	$form_subject = trim($_GET["form_subject"]);
 
-  /* Header for File Attachment */
-  $headers .= "\nMIME-Version: 1.0\n";
-  $headers .= "Content-Type: multipart/mixed;\n" ;
-  $headers .= " boundary=\"{$mimeBoundary}\"";
-
-  /* Multipart Boundary above message */
-  $message = "This is a multi-part message in MIME format.\n\n" .
-  "--{$mimeBoundary}\n" .
-  "Content-Type: text/plain; charset=\"iso-8859-1\"\n" .
-  "Content-Transfer-Encoding: 7bit\n\n" .
-  $message . "\n\n";
-
-  /* Encoding file data */
-  $data = chunk_split(base64_encode($data));
-
-  /* Adding attchment-file to message*/
-  $message .= "--{$mimeBoundary}\n" .
-  "Content-Type: {$fileType};\n" .
-  " name=\"{$fileName}\"\n" .
-  "Content-Transfer-Encoding: base64\n\n" .
-  $data . "\n\n" .
-  "--{$mimeBoundary}--\n";
+	foreach ( $_GET as $key => $value ) {
+		if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
+			$message .= "
+			" . ( ($c = !$c) ? '<tr>':'<tr style="background-color: #f8f8f8;">' ) . "
+				<td style='padding: 10px; border: #e9e9e9 1px solid;'><b>$key</b></td>
+				<td style='padding: 10px; border: #e9e9e9 1px solid;'>$value</td>
+			</tr>
+			";
+		}
+	}
 }
 
-$flgchk = mail ("$to", "$subject", "$message", "$headers");
+$message = "<table style='width: 100%;'>$message</table>";
 
-if($flgchk){
-  echo "<script language='javascript' type='text/javascript'>
-        alert('Success');
-        window.location = 'index.html';
-    </script>";
- }
-else{
-  echo "<script language='javascript' type='text/javascript'>
-        alert('Message failed');
-        window.location = 'index.html';
-    </script>";
+function adopt($text) {
+	return '=?UTF-8?B?'.Base64_encode($text).'?=';
 }
-?>
+
+$headers = "MIME-Version: 1.0" . PHP_EOL .
+"Content-Type: text/html; charset=utf-8" . PHP_EOL .
+'From: '.adopt($project_name).' <'.$admin_email.'>' . PHP_EOL .
+'Reply-To: '.$admin_email.'' . PHP_EOL;
+
+mail($admin_email, adopt($form_subject), $message, $headers );
