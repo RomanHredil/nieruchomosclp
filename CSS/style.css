@@ -1305,27 +1305,27 @@ position: relative;
         font-weight: 500;
     }
     .aplikation-form__input:-ms-input-placeholder{
-        font-size: 22px;
+        font-size: 18px;
         line-height: 34px;
         font-weight: 500;
     }
     .aplikation-form__input::-ms-input-placeholder{
-        font-size: 22px;
+        font-size: 18px;
         line-height: 34px;
         font-weight: 500;
     }
     .aplikation-form__input::placeholder{
-        font-size: 22px;
+        font-size: 18px;
         line-height: 34px;
         font-weight: 500;
     }
     .aplikation-form-field-checkbox__text{
-        font-size: 18px;
+        font-size: 16px;
         line-height: 26px;
         font-weight: 400;
     }
     .info-hashtags__h2{
-        font-size: 28px;
+        font-size: 20px;
         line-height: 40px;
         font-weight: 600;
     }
@@ -1486,7 +1486,7 @@ position: relative;
         line-height: 24px;
     }
     .benefits__tittle{
-        font-size: 22px;
+        font-size: 20px;
     }
     .benefits-desc{
         font-size: 14px;
@@ -1541,7 +1541,7 @@ position: relative;
         font-size: 16px;
     }
     .info-hashtags__h2{
-        font-size: 22px;
+        font-size: 18px;
         line-height: 35px;
         font-weight: 600;
     }
