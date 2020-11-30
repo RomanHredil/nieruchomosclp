@@ -1286,21 +1286,21 @@ position: relative;
         line-height: 26px;
     }
     .benefits-desc{
-        font-size: 20px;
+        font-size: 19px;
         line-height: 34px;
     }
     .aplikation-form__tittle{
-        font-size: 22px;
+        font-size: 20px;
         line-height: 40px;
         font-weight: 600;
     }
     .aplikation-form__input::-webkit-input-placeholder{
-        font-size: 22px;
+        font-size: 18px;
         line-height: 34px;
         font-weight: 500;
     }
     .aplikation-form__input::-moz-placeholder{
-        font-size: 22px;
+        font-size: 18px;
         line-height: 34px;
         font-weight: 500;
     }
