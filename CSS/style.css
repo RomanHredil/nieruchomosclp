@@ -580,9 +580,8 @@ img{
 
 .intro{
     min-height: 100vh;
-    max-width: 100vw;
-    background: url(../JPEG/BK-image.jpg) no-repeat;
-    background-size: cover;
+    background: url(../JPEG/Frame_27-min.png) no-repeat;
+    background-size: auto;
     padding-top: 265px;
     padding-bottom: 300px;
 }
@@ -630,18 +629,21 @@ img{
 }
 .benefits__tittle{
     width: 100%;
-    font-size: 35px;
+    text-align: center;
+    font-size: 38px;
     line-height: 42px;
-    font-weight: 500;
-    color: #00674C;
+    font-weight: 700;
+    color: #fff;
     padding: 100px 100px 50px 50px;
     position: absolute; 
     top: 0;
     left: 0;    
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     -webkit-transform: translateY(-100%);
         -ms-transform: translateY(-100%);
             transform: translateY(-100%);
+    background-color: #79BC99;
+    border-radius: 15px 15px 0 0;
 }
 .benefits__cards{
     display: -ms-grid;
@@ -650,15 +652,23 @@ img{
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 40px;
     padding: 60px 50px 0 50px;
+    background-color: #79BC99;
+    border-radius: 0 0 15px 15px;
+    
 }
 .benefits__card{
     -ms-grid-column-span: 1;
     grid-column: span 1;
     margin-bottom: 50px;
+    border: solid 2px #ffffff;
+    border-radius: 20px;
+    background-color:#f0f0f0;
+    box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.329);
 }
 .benefits-card__img{
     margin-bottom: 35px;
     text-align: center;
+    padding-top: 15px;
 }
 .benefits-desc{
     font-weight: 400;
@@ -666,6 +676,7 @@ img{
     line-height: 28px;
     color: #00674C;
     text-align: center;
+    padding-bottom: 15px;
 }
 .benefits-card-img-icon{
     width: 100px;
@@ -726,45 +737,55 @@ img{
 /* Regulamin Styles Start*/
 
 
+.fieldset__wrap{
+    max-width: 1170px;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
 .aplikation-form{ 
     background: url(../JPEG/form_field_bck_exmpl1.jpg) no-repeat fixed center top;
     background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
     margin-bottom: 50px;
 }
 .aplikation-form__tittle{
-    
-    font-size: 30px;
+    font-size: 20px;
     line-height: 42px;
     font-weight: 500;
     color: #fff;
-    padding-bottom: 40px;
-    
+    text-align: center;
+    margin: auto 0;
 }
 .aplikation-form-tittle__wrap{
-    max-width: 1170px;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    width: 400px;
     display: flex;
-    margin: auto;
-    padding: 50px 15px;
-}
+    display: -ms-flexbox;
+} 
 .aplikation-form__wrap{
-    width: auto;
-    display: contents;
-    padding: 70px 0;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-column-gap: 100px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 25px;
+    background: rgba(0, 0, 0, 0.5) no-repeat cover;
 }
-.aplikation-form__field{
-    display: block;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+.aplikation-form__info{
+    padding-top: 25px;
+    border: solid 2px rgb(194, 194, 194);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.911);
+}
+.aplikation-form-field__wrap{
+    max-width: 450px;
+    text-align: center;
 }
 .aplikation-form__input{
     background: transparent url(../SVG/circle_icon.svg) no-repeat left 1px;
     background-size: 20px;
     border: 0;
-    border-bottom: solid 2px white;
+    border-bottom: solid 2px #00674C;
     margin-bottom: 60px;
     width: 300px;
     padding-left: 40px;
@@ -776,36 +797,36 @@ img{
 .aplikation-form__input::-webkit-input-placeholder{
     font-weight: 400;
     font-size: 18px;
-    color: white;
+    color: #00674C;
 }
 .aplikation-form__input::-moz-placeholder{
     font-weight: 400;
     font-size: 18px;
-    color: white;
+    color: #00674C;
 }
 .aplikation-form__input:-ms-input-placeholder{
     font-weight: 400;
     font-size: 18px;
-    color: white;
+    color: #00674C;
 }
 .aplikation-form__input::-ms-input-placeholder{
     font-weight: 400;
     font-size: 18px;
-    color: white;
+    color: #00674C;
 }
 .aplikation-form__input::placeholder{
     font-weight: 400;
     font-size: 18px;
-    color: white;
+    color: #00674C;
 }
 #file-input{
-    color: white;
+    color: #00674C;
 }
 input[type="file"]::-webkit-file-upload-button{
-    color: white;
+    color: #00674C;
     background: transparent;
     border:solid 1px;
-    border-color:white;
+    border-color:#00674C;
     border-radius:20px;
 }
 input[type="file"]::-webkit-file-upload-button:hover, input[type="file"]::-webkit-file-upload-button:focus{
@@ -817,19 +838,18 @@ input[type="file"]::-webkit-file-upload-button:active{
     background: #00674C;
 }
 .aplikation-form-field-checkbox__label{
-    max-width: 1170px;
-    display: inline-block;
-    margin: auto;
+    display: inline-flex;
+    margin: 0 auto;
     padding: 0 15px 30px 15px;
 }
 .aplikation-form-input__checkbox{
     display: none;
 }
 .aplikation-form-field-checkbox__custom{
-    display: inline-block;
+    display: inline-table;
     height: 30px;
     width: 30px;
-    border: solid 2px #fff;
+    border: solid 2px #00674C;
     margin-right: 8px;
     position: relative;
 }
@@ -844,7 +864,7 @@ input[type="file"]::-webkit-file-upload-button:active{
     display: block;
     width: 20px;
     height: 20px;
-    background: transparent url(../SVG/Logo/sygnet_ziel_jasne.svg) no-repeat;
+    background: transparent url(../SVG/Logo/sygnet_ziel_ciemne.svg) no-repeat;
     opacity: 0;
     -webkit-transition: .2s linear ease-in;
     -o-transition: .2s linear ease-in;
@@ -853,21 +873,22 @@ input[type="file"]::-webkit-file-upload-button:active{
 .aplikation-form-input__checkbox:checked + .aplikation-form-field-checkbox__custom::before{
     opacity: 1;
 }
-.aplikation-form-field-checkbox__text{
-    font-size: 18px;
+.aplikation-form-field-checkbox-text__p{
+    font-size: 13px;
     font-weight: 400;
-    line-height: 26px;
-    color: #fff;
+    line-height: 18px;
+    text-align: left;
+    color: #00674C;
 }
 .aplikation-form__btn{
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     padding: 15px 40px;
     text-transform: uppercase;
     font-size: 22px;
     font-weight: 500;
-    border:solid 2px white;
+    border:solid 2px #00674C;
     background: transparent;
-    color: white;
+    color: #00674C;
     border-radius: 25px;
 }
 .aplikation-form__btn:hover, .aplikation-form__btn:focus {
@@ -1010,6 +1031,18 @@ position: relative;
     .benefits{
         margin-bottom: 0;
     }
+    .benefits__tittle{
+        padding: 50px 50px 25px 25px;
+    }
+    .aplikation-form__wrap{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) ;
+        grid-column-gap: 50px;
+        margin: 0 auto;
+        padding-top: 60px;
+        padding-bottom: 25px;
+        background: rgba(0, 0, 0, 0.5) no-repeat cover;
+    }
     .first-hashtag-info{
         padding-left: 15px;
         padding-right: 15px;
@@ -1137,6 +1170,21 @@ position: relative;
     .burger::marker{
         color: transparent;
     }
+    .aplikation-form__tittle , .aplikation-form__info{
+        grid-column: span 2;
+    }
+    .aplikation-form__info{
+        padding-top: 25px;
+        margin: 0 auto;
+        max-width: 400px;
+    }
+    .aplikation-form-tittle__wrap{
+        margin: 0 auto;
+        width: 100vw;
+    }
+    .aplikation-form__wrap{
+        text-align: center;
+    }
     .aplikation-form__input::-webkit-input-placeholder{
         font-size: 23px;
     }
@@ -1257,13 +1305,13 @@ position: relative;
         width: 100%;
         font-size: 22px;
         line-height: 40px;
-        font-weight: 500;
-        color: #0B486B;
-        padding: 100px 100px 50px 50px;
+        font-weight: 600;
+        color: #fff;
+        padding: 50px 50px 25px 25px;
         position: absolute; 
         top: 0;
         left: 0;    
-        background-color: white;
+        background-color: #79BC99;
         -webkit-transform: translateY(-100%);
             -ms-transform: translateY(-100%);
                 transform: translateY(-100%);
@@ -1290,9 +1338,17 @@ position: relative;
         line-height: 34px;
     }
     .aplikation-form__tittle{
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-bottom: 20px;
         font-size: 19px;
-        line-height: 40px;
+        line-height: 28px;
         font-weight: 600;
+    }
+    .aplikation-form__info{
+        margin: 0 15px; 
+        padding-top: 25px;
+        width: auto;
     }
     .aplikation-form__input::-webkit-input-placeholder{
         font-size: 18px;
@@ -1487,6 +1543,8 @@ position: relative;
     }
     .benefits__tittle{
         font-size: 20px;
+        justify-content: center;
+        font-weight: 600;
     }
     .benefits-desc{
         font-size: 14px;
@@ -1497,6 +1555,11 @@ position: relative;
         font-size: 19px;
         line-height: 35px;
         font-weight: 600;
+    }
+    .aplikation-form__info{
+        margin: 0 auto; 
+        padding-top: 25px;
+        width: 350px;
     }
     .aplikation-form__input::-webkit-input-placeholder{
         font-size: 16px;
