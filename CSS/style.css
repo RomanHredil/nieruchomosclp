@@ -1183,6 +1183,7 @@ position: relative;
     }
     .aplikation-form__wrap{
         text-align: center;
+        min-width: auto;
     }
     .aplikation-form__input::-webkit-input-placeholder{
         font-size: 23px;
@@ -1556,7 +1557,7 @@ position: relative;
         font-weight: 600;
     }
     .aplikation-form__info{
-        margin: 0 auto; 
+        margin: 0 15px;
         padding-top: 25px;
         width: 350px;
     }
@@ -1591,14 +1592,14 @@ position: relative;
         font-weight: 400;
     }
     #file-input{
-        color: white;
+        color: #00674C;
         font-size: 16px;
     }
     input[type="file"]::-webkit-file-upload-button{
-        color: white;
+        color: #00674C;
         background: transparent;
         border:solid 1px;
-        border-color:white;
+        border-color:#00674C;
         border-radius:20px;
         font-size: 16px;
     }
