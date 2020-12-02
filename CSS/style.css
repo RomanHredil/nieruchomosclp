@@ -1173,10 +1173,14 @@ position: relative;
     .aplikation-form__tittle , .aplikation-form__info{
         grid-column: span 2;
     }
+    .aplikation-form__tittle{
+        padding-bottom: 50px;
+    }
     .aplikation-form__info{
         padding-top: 25px;
         margin: 0 auto;
         max-width: 400px;
+        place-self: center;
     }
     .aplikation-form-tittle__wrap{
         margin: 0 auto;
@@ -1346,10 +1350,17 @@ position: relative;
         line-height: 28px;
         font-weight: 600;
     }
-    .aplikation-form__info{
-        margin: 0 15px; 
+    .aplikation-form__wrap{
+        grid-column-gap: 0;
+    }
+    .aplikation-form__tittle , .aplikation-form__info{
+        grid-column: span 2;
+    }
+    .aplikation-form__info{ 
+        margin: 0;
         padding-top: 25px;
-        width: auto;
+        width: 360px;
+        place-self: center;
     }
     .aplikation-form__input::-webkit-input-placeholder{
         font-size: 18px;
@@ -1558,9 +1569,10 @@ position: relative;
         font-weight: 600;
     }
     .aplikation-form__info{
-        margin: 0 15px;
+        margin: 0 auto;
         padding-top: 25px;
-        width: 350px;
+        width: 320px;
+        place-self: center;
     }
     .aplikation-form__input::-webkit-input-placeholder{
         font-size: 16px;
