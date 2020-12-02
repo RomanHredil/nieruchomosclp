@@ -740,9 +740,7 @@ img{
 
 .fieldset__wrap{
     max-width: 1170px;
-    display: flex;
     margin: 0 auto;
-    flex-wrap: wrap;
 }
 .aplikation-form{ 
     background: url(../JPEG/form_field_bck_exmpl1.jpg) no-repeat fixed center top;
