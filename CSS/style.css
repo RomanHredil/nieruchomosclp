@@ -1568,6 +1568,9 @@ position: relative;
         line-height: 35px;
         font-weight: 600;
     }
+    .aplikation-form__wrap{
+        grid-column-gap: 0;
+    }
     .aplikation-form__info{
         margin: 0 auto;
         padding-top: 25px;
