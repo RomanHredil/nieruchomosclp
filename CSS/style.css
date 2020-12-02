@@ -580,8 +580,9 @@ img{
 
 .intro{
     min-height: 100vh;
+    max-width: 100vw;
     background: url(../JPEG/Frame_27-min.png) no-repeat;
-    background-size: auto;
+    background-size: cover;
     padding-top: 265px;
     padding-bottom: 300px;
 }
