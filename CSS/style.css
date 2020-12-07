@@ -581,7 +581,7 @@ img{
 .intro{
     min-height: 100vh;
     max-width: 100vw;
-    background: url(../JPEG/Frame_27-min.png) no-repeat;
+    background: url(../JPEG/Banner_bck.jpg) no-repeat;
     background-size: cover;
     padding-top: 265px;
     padding-bottom: 300px;
@@ -635,14 +635,14 @@ img{
     line-height: 42px;
     font-weight: 700;
     color: #fff;
-    padding: 100px 100px 50px 50px;
+    padding-top: 25px;
     position: absolute; 
     top: 0;
     left: 0;    
     background-color: rgb(255, 255, 255);
-    -webkit-transform: translateY(-100%);
-        -ms-transform: translateY(-100%);
-            transform: translateY(-100%);
+    -webkit-transform: translateY(-35%);
+        -ms-transform: translateY(-35%);
+            transform: translateY(-35%);
     background-color: #79BC99;
     border-radius: 15px 15px 0 0;
 }
@@ -652,7 +652,7 @@ img{
     -ms-grid-columns: 1fr 40px 1fr 40px 1fr;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 40px;
-    padding: 60px 50px 0 50px;
+    padding: 100px 50px 0 50px;
     background-color: #79BC99;
     border-radius: 0 0 15px 15px;
     
