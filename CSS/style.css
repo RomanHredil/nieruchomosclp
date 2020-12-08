@@ -609,6 +609,7 @@ img{
     font-weight: 500;
     line-height: 28px;
     color: white;  
+    background-color: rgba(0, 103, 76, 0.35);
 }
 
 
@@ -640,11 +641,10 @@ img{
     position: absolute; 
     top: 0;
     left: 0;    
-    background-color: rgb(255, 255, 255);
     -webkit-transform: translateY(-35%);
         -ms-transform: translateY(-35%);
             transform: translateY(-35%);
-    background-color: #79BC99;
+    background-color: #c3e1d1e6;
     border-radius: 15px 15px 0 0;
 }
 .benefits__cards{
@@ -654,7 +654,7 @@ img{
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 40px;
     padding: 100px 50px 0 50px;
-    background-color: #79BC99;
+    background-color: #c4e1d2;
     border-radius: 0 0 15px 15px;
     
 }
@@ -793,32 +793,32 @@ img{
     padding-bottom: 20px;
     font-weight: 400;
     font-size: 18px;
-    color: white;
+    color: #00674C;
 }
 .aplikation-form__input::-webkit-input-placeholder{
     font-weight: 400;
     font-size: 18px;
-    color: #00674C;
+    color: #95bd98;
 }
 .aplikation-form__input::-moz-placeholder{
     font-weight: 400;
     font-size: 18px;
-    color: #00674C;
+    color: #95bd98;
 }
 .aplikation-form__input:-ms-input-placeholder{
     font-weight: 400;
     font-size: 18px;
-    color: #00674C;
+    color: #95bd98;
 }
 .aplikation-form__input::-ms-input-placeholder{
     font-weight: 400;
     font-size: 18px;
-    color: #00674C;
+    color: #95bd98;
 }
 .aplikation-form__input::placeholder{
     font-weight: 400;
     font-size: 18px;
-    color: #00674C;
+    color: #95bd98;
 }
 #file-input{
     color: #00674C;
@@ -831,12 +831,12 @@ input[type="file"]::-webkit-file-upload-button{
     border-radius:20px;
 }
 input[type="file"]::-webkit-file-upload-button:hover, input[type="file"]::-webkit-file-upload-button:focus{
-    background-color: #00674C;
+    background-color: #79BC99;
     -webkit-transition: .2s ease-in-out;
     transition: .2s ease-in-out;
 }
 input[type="file"]::-webkit-file-upload-button:active{
-    background: #00674C;
+    background: #CEEF9D;
 }
 .aplikation-form-field-checkbox__label{
     display: inline-flex;
@@ -893,13 +893,13 @@ input[type="file"]::-webkit-file-upload-button:active{
     border-radius: 25px;
 }
 .aplikation-form__btn:hover, .aplikation-form__btn:focus {
-    background-color: #00674C;
+    background-color: #79BC99;
     -webkit-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
     transition: .2s ease-in-out;
 }
 .aplikation-form__btn:active{
-    background: #00674C;
+    background: #CEEF9D;
 }
 
 
@@ -1310,7 +1310,6 @@ position: relative;
         -webkit-box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993); 
                 box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
         margin: 0 auto;
-        background-color: white;
         position: relative;
     }
     .benefits__tittle{
@@ -1323,7 +1322,6 @@ position: relative;
         position: absolute; 
         top: 0;
         left: 0;    
-        background-color: #79BC99;
         -webkit-transform: translateY(-100%);
             -ms-transform: translateY(-100%);
                 transform: translateY(-100%);
@@ -1478,7 +1476,7 @@ position: relative;
     .intro{
         min-height: 100vh;
         max-width: 100vw;
-        background: url(../JPEG/Banner_bck_375px.jpg) no-repeat;
+        background: url(../JPEG/Banner_bck_375px_2.jpg) no-repeat;
         background-size: cover;
         background-position: center;
         padding-top: 165px;
